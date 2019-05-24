@@ -1,0 +1,17 @@
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\bin\Debug\netcoreapp2.2\Pegasus.API.deps.json
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\bin\Debug\netcoreapp2.2\Pegasus.API.runtimeconfig.json
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\bin\Debug\netcoreapp2.2\Pegasus.API.runtimeconfig.dev.json
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\bin\Debug\netcoreapp2.2\Pegasus.API.dll
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.csprojAssemblyReference.cache
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.csproj.CoreCompileInputs.cache
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.RazorAssemblyInfo.cache
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.RazorAssemblyInfo.cs
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.AssemblyInfoInputs.cache
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.AssemblyInfo.cs
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.RazorTargetAssemblyInfo.cache
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\bin\Debug\netcoreapp2.2\Pegasus.API.pdb
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\bin\Debug\netcoreapp2.2\Pegasus.Model.dll
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\bin\Debug\netcoreapp2.2\Pegasus.Model.pdb
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.csproj.CopyComplete
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.dll
+C:\MY NOTE\Source\DemoAspNetCoreWithDapper\Pegasus.API\obj\Debug\netcoreapp2.2\Pegasus.API.pdb
