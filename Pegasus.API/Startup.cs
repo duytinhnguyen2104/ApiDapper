@@ -28,14 +28,15 @@ namespace Pegasus.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc()   ;
 
             services.AddScoped<IMemberRepository, MemberRepository>();
             // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "Pegasus API", Version = "v1" });
-            });
+            services.AddSwaggerGen( c =>
+                {
+                    c.SwaggerDoc("v1", new Info { Title = "API With Dapper", Version = "v1" });
+                }
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,14 +54,14 @@ namespace Pegasus.API
 
             app.UseStaticFiles();
             app.UseHttpsRedirection();
+            app.UseMvc();
             app.UseSwagger();
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pegasus API V1");
+                {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API With Dapper");
             });
-            app.UseMvc();
         }
     }
 }

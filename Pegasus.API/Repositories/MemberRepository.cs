@@ -33,23 +33,31 @@ namespace Pegasus.API.Repositories
             }
         }
 
-        public IEnumerable<Member> GetMembers(object paramaters)
+        public IEnumerable<Member> GetMembers(Member member)
         {
             using(IDbConnection dbConnection = Connection)
             {
+
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@MemberID", member.MemberID, DbType.Int32, ParameterDirection.Input,2);
+                parameters.Add("@MemberName", member.MemberName, DbType.String, ParameterDirection.Input, 200);
+                parameters.Add("@Email", member.Email, DbType.String, ParameterDirection.Input, 200);
+                parameters.Add("@PhoneNumber", member.PhoneNumber, DbType.String, ParameterDirection.Input, 10);
+
                 dbConnection.Open();
-                return dbConnection.Query<Member>("MemberSelectAll", paramaters).ToList();
+                var result = dbConnection.Query<Member>("MemberSelectAll", parameters,commandType: CommandType.StoredProcedure).ToList();
+                return result;
             }
         }
 
-        public IEnumerable<Member> GetMember(int _memberID)
+        public Member GetMember(int _memberID)
         {
             using (IDbConnection dbConnection = Connection)
             {
                 dbConnection.Open();
                 return dbConnection.Query<Member>("MemberSelectOne", new object []{
                     "@MemberID",_memberID
-                }).ToList();
+                }).FirstOrDefault();
             }
         }
 
@@ -61,7 +69,7 @@ namespace Pegasus.API.Repositories
                 parameters.Add("@MemberName", _member.MemberName,DbType.String,ParameterDirection.Input,200);
                 parameters.Add("@Email", _member.Email,DbType.String,ParameterDirection.Input,200);
                 parameters.Add("@PhoneNumber", _member.PhoneNumber,DbType.String,ParameterDirection.Input,10);
-                parameters.Add("@ImageID", _member.MemberName,DbType.Int32,ParameterDirection.Input,1);
+                parameters.Add("@ImageID", _member.ImageID,DbType.Int32,ParameterDirection.Input,1);
 
                 dbConnection.Open();
 
@@ -78,8 +86,8 @@ namespace Pegasus.API.Repositories
                 parameters.Add("@MemberName", _member.MemberName, DbType.String, ParameterDirection.Input, 200);
                 parameters.Add("@Email", _member.Email, DbType.String, ParameterDirection.Input, 200);
                 parameters.Add("@PhoneNumber", _member.PhoneNumber, DbType.String, ParameterDirection.Input, 10);
-                parameters.Add("@ImageID", _member.MemberName, DbType.Int32, ParameterDirection.Input, 1);
-                parameters.Add("@MemberID", _member.MemberID, DbType.String, ParameterDirection.Input, 200);
+                parameters.Add("@ImageID", _member.ImageID, DbType.Int32, ParameterDirection.Input, 1);
+                parameters.Add("@MemberID", _member.MemberID, DbType.Int32, ParameterDirection.Input, 2);
 
                 dbConnection.Open();
 
@@ -89,13 +97,20 @@ namespace Pegasus.API.Repositories
 
         public bool DeleteMember(int _memberID)
         {
-            using (IDbConnection dbConnection = Connection)
+            try
             {
-                DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@MemberID", _memberID, DbType.String, ParameterDirection.Input, 200);
-                dbConnection.Open();
+                using (IDbConnection dbConnection = Connection)
+                {
+                    DynamicParameters parameters = new DynamicParameters();
+                    parameters.Add("@MemberID", _memberID, DbType.Int32, ParameterDirection.Input, 200);
+                    dbConnection.Open();
 
-                return dbConnection.Execute("MemberDelete", parameters, commandType: CommandType.StoredProcedure) > 0 ? true : false;
+                    return dbConnection.Execute("MemberDelete", parameters, commandType: CommandType.StoredProcedure) > 0 ? true : false;
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

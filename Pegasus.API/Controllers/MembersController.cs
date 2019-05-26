@@ -17,24 +17,23 @@ namespace Pegasus.API.Controllers
             _memberRepository = memberRepository;
         }
 
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<Member>> GetMembersAll()
+        // POST api/GetMembersAll
+        [HttpPost("GetMembersAll")]
+        public ActionResult<IEnumerable<Member>> GetMembersAll([FromBody] Member member)
         {
-            var ResultRepo = _memberRepository.GetMembers(new object[] { });
-
+            var ResultRepo = _memberRepository.GetMembers(member);
             return Ok(ResultRepo);
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> GetMember(int memberID)
+        // GET api/GetMember/1
+        [HttpGet("GetMember")]
+        public ActionResult<Member> GetMember(int memberID)
         {
-            var ResultRepo = _memberRepository.GetMembers(memberID);
+            if (memberID <= 0) return new Member() ;
+            var ResultRepo = _memberRepository.GetMember(memberID);
             return Ok(ResultRepo);
         }
-        // POST api/values
-        [HttpPost]
+        // POST api/AddMember
+        [HttpPost("AddMember")]
         public IActionResult AddMember([FromBody] Member member)
         {
             if (member == null) return BadRequest();
@@ -46,9 +45,8 @@ namespace Pegasus.API.Controllers
                 return CreatedAtRoute("GetMember", new { id = result }, memberToReturn)
                 ;
         }
-
-        // PUT api/values/5
-        [HttpPost]
+        // PUT api/UpdateMember
+        [HttpPost("UpdateMember")]
         public IActionResult UpdateMember([FromBody] Member member)
         {
             if (member == null) return BadRequest();
@@ -57,17 +55,17 @@ namespace Pegasus.API.Controllers
                 return NotFound();
             else
                 return CreatedAtRoute("GetMember", new { id = member.MemberID }, member)
-                    ;
+            ;
         }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
+        // DELETE api/DeleteMember
+        [HttpDelete("DeleteMember")]
         public IActionResult DeleteMember(int memberid)
         {
             var delRepo = _memberRepository.DeleteMember(memberid);
             if (!delRepo)
                 throw new Exception($"Deleting Member with {memberid} failed.");
-            return NoContent();
+             return Accepted();
+            
         }
     }
 }
