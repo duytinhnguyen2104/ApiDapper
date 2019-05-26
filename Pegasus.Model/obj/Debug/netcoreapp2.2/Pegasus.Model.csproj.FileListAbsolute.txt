@@ -14,3 +14,4 @@ C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug
 C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.AssemblyInfo.cs
 C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.dll
 C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.pdb
+C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.csprojAssemblyReference.cache
