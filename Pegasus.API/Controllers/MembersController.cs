@@ -30,6 +30,7 @@ namespace Pegasus.API.Controllers
         {
             if (memberID <= 0) return new Member() ;
             var ResultRepo = _memberRepository.GetMember(memberID);
+            if (ResultRepo == null) return NoContent();
             return Ok(ResultRepo);
         }
         // POST api/AddMember

@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Laptop_Tinh\\.nuget\\packages\\": {},
+    "C:\\Users\\PWT765\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DATA\\WorkNote\\Document Study\\Project\\ApiNetCoreDapper\\Pegasus.Model\\Pegasus.Model.csproj",
+      "projectUniqueName": "C:\\MY NOTE\\Source\\Api-Dapper\\Pegasus.Model\\Pegasus.Model.csproj",
       "projectName": "Pegasus.Model",
-      "projectPath": "C:\\DATA\\WorkNote\\Document Study\\Project\\ApiNetCoreDapper\\Pegasus.Model\\Pegasus.Model.csproj",
-      "packagesPath": "C:\\Users\\Laptop_Tinh\\.nuget\\packages\\",
-      "outputPath": "C:\\DATA\\WorkNote\\Document Study\\Project\\ApiNetCoreDapper\\Pegasus.Model\\obj\\",
+      "projectPath": "C:\\MY NOTE\\Source\\Api-Dapper\\Pegasus.Model\\Pegasus.Model.csproj",
+      "packagesPath": "C:\\Users\\PWT765\\.nuget\\packages\\",
+      "outputPath": "C:\\MY NOTE\\Source\\Api-Dapper\\Pegasus.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Laptop_Tinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PWT765\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -710,7 +710,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {

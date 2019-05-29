@@ -15,3 +15,12 @@ C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug
 C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.dll
 C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.pdb
 C:\DATA\WorkNote\Document Study\Project\ApiNetCoreDapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.csprojAssemblyReference.cache
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\bin\Debug\netcoreapp2.2\Pegasus.Model.deps.json
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\bin\Debug\netcoreapp2.2\Pegasus.Model.dll
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\bin\Debug\netcoreapp2.2\Pegasus.Model.pdb
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.csprojAssemblyReference.cache
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.csproj.CoreCompileInputs.cache
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.AssemblyInfoInputs.cache
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.AssemblyInfo.cs
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.dll
+C:\MY NOTE\Source\Api-Dapper\Pegasus.Model\obj\Debug\netcoreapp2.2\Pegasus.Model.pdb

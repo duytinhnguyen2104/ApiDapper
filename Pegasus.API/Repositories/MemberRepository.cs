@@ -54,10 +54,11 @@ namespace Pegasus.API.Repositories
         {
             using (IDbConnection dbConnection = Connection)
             {
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@MemberID", _memberID, DbType.Int32, ParameterDirection.Input, 2);
                 dbConnection.Open();
-                return dbConnection.Query<Member>("MemberSelectOne", new object []{
-                    "@MemberID",_memberID
-                }).FirstOrDefault();
+                return dbConnection.Query<Member>("MemberSelectOne", parameters , commandType: CommandType.StoredProcedure
+                ).FirstOrDefault();
             }
         }
 
