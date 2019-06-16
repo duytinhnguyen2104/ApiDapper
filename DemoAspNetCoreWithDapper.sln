@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAspNetCoreWithDapper", "DemoAspNetCoreWithDapper\DemoAspNetCoreWithDapper.csproj", "{90BE5575-E3B4-424F-951B-8D1CA7491AAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAspNetCoreWithDapper", "DemoAspNetCoreWithDapper\DemoAspNetCoreWithDapper.csproj", "{90BE5575-E3B4-424F-951B-8D1CA7491AAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{69C9C480-099C-4939-9154-7158A65B7F5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pegasus.Model", "Pegasus.Model\Pegasus.Model.csproj", "{DE6AAB30-ABE1-416F-AAC6-20DAB10F2264}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pegasus.Model", "Pegasus.Model\Pegasus.Model.csproj", "{DE6AAB30-ABE1-416F-AAC6-20DAB10F2264}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pegasus.API", "Pegasus.API\Pegasus.API.csproj", "{D02F4E52-E0F5-4CB2-A70C-9B8C043F7817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pegasus.API", "Pegasus.API\Pegasus.API.csproj", "{D02F4E52-E0F5-4CB2-A70C-9B8C043F7817}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PegasusDB", "PegasusDB\PegasusDB.sqlproj", "{F5105CC4-7400-4BF9-9BCE-F999CAA8A6B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,12 @@ Global
 		{D02F4E52-E0F5-4CB2-A70C-9B8C043F7817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D02F4E52-E0F5-4CB2-A70C-9B8C043F7817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D02F4E52-E0F5-4CB2-A70C-9B8C043F7817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5105CC4-7400-4BF9-9BCE-F999CAA8A6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5105CC4-7400-4BF9-9BCE-F999CAA8A6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5105CC4-7400-4BF9-9BCE-F999CAA8A6B4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F5105CC4-7400-4BF9-9BCE-F999CAA8A6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5105CC4-7400-4BF9-9BCE-F999CAA8A6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5105CC4-7400-4BF9-9BCE-F999CAA8A6B4}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +45,7 @@ Global
 		{90BE5575-E3B4-424F-951B-8D1CA7491AAB} = {69C9C480-099C-4939-9154-7158A65B7F5C}
 		{DE6AAB30-ABE1-416F-AAC6-20DAB10F2264} = {69C9C480-099C-4939-9154-7158A65B7F5C}
 		{D02F4E52-E0F5-4CB2-A70C-9B8C043F7817} = {69C9C480-099C-4939-9154-7158A65B7F5C}
+		{F5105CC4-7400-4BF9-9BCE-F999CAA8A6B4} = {69C9C480-099C-4939-9154-7158A65B7F5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D76C766B-F066-4905-974F-985680363C48}

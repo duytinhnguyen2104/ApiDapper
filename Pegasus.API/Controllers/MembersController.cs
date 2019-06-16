@@ -30,7 +30,6 @@ namespace Pegasus.API.Controllers
         {
             if (memberID <= 0) return new Member() ;
             var ResultRepo = _memberRepository.GetMember(memberID);
-            if (ResultRepo == null) return NoContent();
             return Ok(ResultRepo);
         }
         // POST api/AddMember
@@ -38,7 +37,7 @@ namespace Pegasus.API.Controllers
         public IActionResult AddMember([FromBody] Member member)
         {
             if (member == null) return BadRequest();
-            var result = _memberRepository.AddMember(member);
+            var result = _memberRepository.AddMember(member)    ;
             Member memberToReturn = new Member();
             if (result < 0)
                 return NoContent();
